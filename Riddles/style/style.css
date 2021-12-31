@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+div{
+    padding: 20px;
+}
+
+input, button{
+    display: inline-block;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid blue;
+    color: rgb(0, 0, 0);
+    transition: background-color, color .3s ease
+}
+
+input:focus{
+    color: rgb(255, 254, 254);
+    outline: none;
+    background-color: blue;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color, color .3s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+div:nth-of-type(odd){
+    background-color: aliceblue;
+}
+
+div:nth-of-type(even){
+    background-color: rgb(183, 226, 196);
+}
+
+p{
+    margin: 10px 0;
+}
+
+.poruka{
+   color: rgb(89, 1, 204);
+}
+
+#userBox{
+    padding: 20px;
+    background-color: rgb(42, 52, 146);
+    color: white;
+    text-align: center;font-weight: bold;
+    font-size: 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 10px 0;
+}
+
+li::before{
+    content: "✔";
+    margin-right: 5px;
+    position: relative;
+}
+
+#resenja{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px 15px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border: 1px solid blue;
+    border-top-left-radius: 10px;
+}
+
+.resenjeHide{
+    display: none;
+}
+
+.resenjeShow{
+    display: block;
+}
